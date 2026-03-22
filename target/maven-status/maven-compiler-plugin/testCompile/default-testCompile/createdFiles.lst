@@ -1,0 +1,9 @@
+pageObjects\LogInPage.class
+testCases\TC002Loginverification.class
+pageObjects\AccountRegiestrationPage.class
+testBase\TestBaseforAlltestCases.class
+pageObjects\HomePage.class
+testCases\Tc1_Regrestration.class
+pageObjects\MyAccountPage.class
+pageObjects\PageBase.class
+utlities\ExtentsReportsManger.class
