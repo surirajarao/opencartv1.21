@@ -41,3 +41,7 @@
 11:31:25.636 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@41a90fa8: 6 ms
 11:31:25.642 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@4b85880b: 6 ms
 11:31:25.642 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4f936da8: 0 ms
+14:43:34.137 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\HP\eclipse-workspace\opencartv1.21\master.xml"
+14:43:34.430 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\HP\eclipse-workspace\opencartv1.21\master.xml
+

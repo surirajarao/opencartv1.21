@@ -1,30 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-20T11:31:25 IST" name="Default suite" finished-at="2026-03-20T11:31:25 IST" duration-ms="80">
+  <suite started-at="2026-04-15T14:43:34 IST" name="Master Suite" finished-at="2026-04-15T14:43:45 IST" duration-ms="11547">
     <groups>
       <group name="Master">
-        <method signature="TC002Loginverification.VerifyLogin()[pri:0, instance:testCases.TC002Loginverification@2a7686a7]" name="VerifyLogin" class="testCases.TC002Loginverification"/>
+        <method signature="TC002Loginverification.VerifyLogin()[pri:0, instance:testCases.TC002Loginverification@11981797]" name="VerifyLogin" class="testCases.TC002Loginverification"/>
+        <method signature="Tc1_Regrestration.ValidationRegiter()[pri:0, instance:testCases.Tc1_Regrestration@5644dc81]" name="ValidationRegiter" class="testCases.Tc1_Regrestration"/>
       </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="Tc1_Regrestration.ValidationRegiter()[pri:0, instance:testCases.Tc1_Regrestration@5644dc81]" name="ValidationRegiter" class="testCases.Tc1_Regrestration"/>
+      </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="TC002Loginverification.VerifyLogin()[pri:0, instance:testCases.TC002Loginverification@2a7686a7]" name="VerifyLogin" class="testCases.TC002Loginverification"/>
+        <method signature="TC002Loginverification.VerifyLogin()[pri:0, instance:testCases.TC002Loginverification@11981797]" name="VerifyLogin" class="testCases.TC002Loginverification"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-03-20T11:31:25 IST" name="Default test" finished-at="2026-03-20T11:31:25 IST" duration-ms="80">
+    <test started-at="2026-04-15T14:43:34 IST" name="ChromeTest" finished-at="2026-04-15T14:43:45 IST" duration-ms="11547">
+      <class name="testCases.Tc1_Regrestration">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.Tc1_Regrestration@5644dc81]" started-at="2026-04-15T14:43:34 IST" name="Setup" finished-at="2026-04-15T14:43:34 IST" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:testCases.Tc1_Regrestration@5644dc81]" started-at="2026-04-15T14:43:34 IST" name="Setup" finished-at="2026-04-15T14:43:45 IST" duration-ms="11179" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 147.0.7727.56 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-P1M2J1S', ip: '192.168.1.6', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Symbols not available. Dumping unresolved backtrace:
+0x7ff6605342a5
+0x7ff660534300
+0x7ff6602cd49d
+0x7ff6603157dd
+0x7ff660314535
+0x7ff66030ea6a
+0x7ff660309379
+0x7ff66035fa41
+0x7ff66035f2a6
+0x7ff660318e38
+0x7ff660319d23
+0x7ff660803010
+0x7ff6607fd898
+0x7ff66081dc0a
+0x7ff660550655
+0x7ff6605595fc
+0x7ff66053d604
+0x7ff66053d7b6
+0x7ff6605232c7
+0x7ffbb2e4e8d7
+0x7ffbb404c3fc
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 147.0.7727.56 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-P1M2J1S', ip: '192.168.1.6', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Symbols not available. Dumping unresolved backtrace:
+0x7ff6605342a5
+0x7ff660534300
+0x7ff6602cd49d
+0x7ff6603157dd
+0x7ff660314535
+0x7ff66030ea6a
+0x7ff660309379
+0x7ff66035fa41
+0x7ff66035f2a6
+0x7ff660318e38
+0x7ff660319d23
+0x7ff660803010
+0x7ff6607fd898
+0x7ff66081dc0a
+0x7ff660550655
+0x7ff6605595fc
+0x7ff66053d604
+0x7ff66053d7b6
+0x7ff6605232c7
+0x7ffbb2e4e8d7
+0x7ffbb404c3fc
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at testCases.Tc1_Regrestration.Setup(Tc1_Regrestration.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="ValidationRegiter()[pri:0, instance:testCases.Tc1_Regrestration@5644dc81]" started-at="2026-04-15T14:43:45 IST" name="ValidationRegiter" finished-at="2026-04-15T14:43:45 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 147.0.7727.56 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-P1M2J1S', ip: '192.168.1.6', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Symbols not available. Dumping unresolved backtrace:
+0x7ff6605342a5
+0x7ff660534300
+0x7ff6602cd49d
+0x7ff6603157dd
+0x7ff660314535
+0x7ff66030ea6a
+0x7ff660309379
+0x7ff66035fa41
+0x7ff66035f2a6
+0x7ff660318e38
+0x7ff660319d23
+0x7ff660803010
+0x7ff6607fd898
+0x7ff66081dc0a
+0x7ff660550655
+0x7ff6605595fc
+0x7ff66053d604
+0x7ff66053d7b6
+0x7ff6605232c7
+0x7ffbb2e4e8d7
+0x7ffbb404c3fc
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 147.0.7727.56 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-P1M2J1S', ip: '192.168.1.6', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Symbols not available. Dumping unresolved backtrace:
+0x7ff6605342a5
+0x7ff660534300
+0x7ff6602cd49d
+0x7ff6603157dd
+0x7ff660314535
+0x7ff66030ea6a
+0x7ff660309379
+0x7ff66035fa41
+0x7ff66035f2a6
+0x7ff660318e38
+0x7ff660319d23
+0x7ff660803010
+0x7ff6607fd898
+0x7ff66081dc0a
+0x7ff660550655
+0x7ff6605595fc
+0x7ff66053d604
+0x7ff66053d7b6
+0x7ff6605232c7
+0x7ffbb2e4e8d7
+0x7ffbb404c3fc
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at testCases.Tc1_Regrestration.Setup(Tc1_Regrestration.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidationRegiter -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.Tc1_Regrestration@5644dc81]" started-at="2026-04-15T14:43:45 IST" name="teardown" finished-at="2026-04-15T14:43:45 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.Tc1_Regrestration -->
       <class name="testCases.TC002Loginverification">
-        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002Loginverification@2a7686a7]" started-at="2026-03-20T11:31:25 IST" name="Setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1773986485467" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002Loginverification@11981797]" started-at="2026-04-15T14:43:45 IST" name="Setup" finished-at="2026-04-15T14:43:45 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:testCases.TC002Loginverification@11981797]" started-at="2026-04-15T14:43:45 IST" name="Setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1776244425973" status="FAIL">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
             <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeClass on method Setup but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1073044424\testng-customsuite.xml]]>
+              <![CDATA[Index 1 out of bounds for length 1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeClass on method Setup but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1073044424\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 at org.testng.internal.Parameters.createParameters(Parameters.java:690)
 at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
@@ -49,26 +336,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:testCases.TC002Loginverification@2a7686a7]" started-at="2026-03-20T11:31:25 IST" name="Setup" finished-at="2026-03-20T11:31:25 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="VerifyLogin()[pri:0, instance:testCases.TC002Loginverification@2a7686a7]" started-at="2026-03-20T11:31:25 IST" name="VerifyLogin" finished-at="2026-03-20T11:31:25 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="VerifyLogin()[pri:0, instance:testCases.TC002Loginverification@11981797]" started-at="2026-04-15T14:43:45 IST" name="VerifyLogin" finished-at="2026-04-15T14:43:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
             <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeClass on method Setup but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1073044424\testng-customsuite.xml]]>
+              <![CDATA[Index 1 out of bounds for length 1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeClass on method Setup but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1073044424\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 at org.testng.internal.Parameters.createParameters(Parameters.java:690)
 at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
@@ -93,15 +372,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002Loginverification@2a7686a7]" started-at="2026-03-20T11:31:25 IST" name="teardown" finished-at="2026-03-20T11:31:25 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002Loginverification@11981797]" started-at="2026-04-15T14:43:45 IST" name="teardown" finished-at="2026-04-15T14:43:45 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC002Loginverification -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Master Suite -->
 </testng-results>

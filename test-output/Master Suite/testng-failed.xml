@@ -18,8 +18,8 @@
       </class> <!-- testCases.Tc1_Regrestration -->
       <class name="testCases.TC002Loginverification">
         <methods>
-          <include name="Setup"/>
           <include name="teardown"/>
+          <include name="Setup"/>
           <include name="Setup"/>
           <include name="VerifyLogin"/>
         </methods>
